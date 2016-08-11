@@ -3133,3 +3133,9 @@
 .image-logo {
 	width: 50%;
 }
+
+@media screen and (max-width: 480px) {
+	.image-logo {
+		width: 75%;
+	}
+}
