@@ -79,7 +79,7 @@ gulp.task('min', () => gulp.src('src/*.html')
 .pipe(gulpIf('*.js', uglify({mangle: false})))
 // Minifies only if it's a CSS file
 .pipe(gulpIf('*.css', cssnano()))
-.pipe(gulpIf('*.html', htmlmin({collapseWhitespace: true, removeComments: true})))
+//.pipe(gulpIf('*.html', htmlmin({collapseWhitespace: true, removeComments: true})))
 .pipe(gulp.dest('dist')));
 
 
