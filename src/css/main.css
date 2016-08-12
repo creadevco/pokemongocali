@@ -2085,6 +2085,10 @@
 
 /* Image */
 
+	.section-image {
+		width: 100%;
+	}
+
 	.image {
 		border: 0;
 		display: inline-block;
