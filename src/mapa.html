@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +10,42 @@
   </head>
   <body>
 
+  <style>
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    @media screen and (max-width: 480px) {
+      .google-maps {
+        padding-bottom: 140%;
+        margin: 0;
+      }
+    }
+  </style>
+    <figure class="google-maps">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1H3Fs5rN8Mzv3d0Kjhlz5v6m-tgU&hl=en" ></iframe>
+    </figure>
+
+    <footer class="footer page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <p class="white_font strong">Desarrollado por</p>
+            <a href="http://creadev.co" class="grey-text text-lighten-4" target="_blank">
+            <img src="http://roadev.github.io/creadev-co/dist/assets/images/logo.png" height="80px" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
