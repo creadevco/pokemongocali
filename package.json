@@ -21,13 +21,13 @@
     "url": "https://github.com/creadevco/pokemongocali/issues"
   },
   "homepage": "https://github.com/creadevco/pokemongocali#readme",
-  
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-preset-es2015": "^6.13.2",
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.1",

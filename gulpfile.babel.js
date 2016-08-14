@@ -17,6 +17,7 @@ import useref from 'gulp-useref';
 import uglify from 'gulp-uglify';
 import gulpIf from 'gulp-if';
 import cssnano from 'gulp-cssnano';
+import ghPages from 'gulp-gh-pages';
 
 /**
 * Compile with gulp-ruby-sass
@@ -29,6 +30,11 @@ gulp.task("sass", () => {
   // Writes converted css to dest url
   .pipe(gulp.dest("src/assets/css"))
   .pipe(browserSync.stream({match: "dist/*.css"}))
+});
+
+gulp.task('deploy', () => {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 /*
